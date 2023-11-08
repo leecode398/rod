@@ -3,6 +3,7 @@ module github.com/leecode398/rod
 go 1.16
 
 require (
+	github.com/go-rod/rod v0.114.5
 	github.com/ysmood/fetchup v0.2.3
 	github.com/ysmood/goob v0.4.0
 	github.com/ysmood/got v0.34.1
