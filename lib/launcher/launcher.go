@@ -55,45 +55,45 @@ func New() *Launcher {
 	}
 
 	defaultFlags := map[flags.Flag][]string{
-		flags.Bin:      {defaults.Bin},
-		flags.Leakless: nil,
-
-		flags.UserDataDir: {dir},
-
-		// use random port by default
-		flags.RemoteDebuggingPort: {defaults.Port},
-
-		// enable headless by default
-		flags.Headless: nil,
-
-		flags.Preferences: {`{"plugins":{"always_open_pdf_externally": true}}`},
-
-		// to disable the init blank window
-		"no-first-run":      nil,
-		"no-startup-window": nil,
-
-		// TODO: about the "site-per-process" see https://github.com/puppeteer/puppeteer/issues/2548
-		"disable-features": {"site-per-process", "TranslateUI"},
-
-		"disable-dev-shm-usage":                              nil,
-		"disable-background-networking":                      nil,
-		"disable-background-timer-throttling":                nil,
-		"disable-backgrounding-occluded-windows":             nil,
-		"disable-breakpad":                                   nil,
-		"disable-client-side-phishing-detection":             nil,
-		"disable-component-extensions-with-background-pages": nil,
-		"disable-default-apps":                               nil,
-		"disable-hang-monitor":                               nil,
-		"disable-ipc-flooding-protection":                    nil,
-		"disable-popup-blocking":                             nil,
-		"disable-prompt-on-repost":                           nil,
-		"disable-renderer-backgrounding":                     nil,
-		"disable-sync":                                       nil,
-		"enable-automation":                                  nil,
-		"enable-features":                                    {"NetworkService", "NetworkServiceInProcess"},
-		"force-color-profile":                                {"srgb"},
-		"metrics-recording-only":                             nil,
-		"use-mock-keychain":                                  nil,
+		flags.Bin: {defaults.Bin},
+		// flags.Leakless: nil,
+		//
+		// flags.UserDataDir: {dir},
+		//
+		// // use random port by default
+		// flags.RemoteDebuggingPort: {defaults.Port},
+		//
+		// // enable headless by default
+		// flags.Headless: nil,
+		//
+		// flags.Preferences: {`{"plugins":{"always_open_pdf_externally": true}}`},
+		//
+		// // to disable the init blank window
+		// "no-first-run":      nil,
+		// "no-startup-window": nil,
+		//
+		// // TODO: about the "site-per-process" see https://github.com/puppeteer/puppeteer/issues/2548
+		// "disable-features": {"site-per-process", "TranslateUI"},
+		//
+		// "disable-dev-shm-usage":                              nil,
+		// "disable-background-networking":                      nil,
+		// "disable-background-timer-throttling":                nil,
+		// "disable-backgrounding-occluded-windows":             nil,
+		// "disable-breakpad":                                   nil,
+		// "disable-client-side-phishing-detection":             nil,
+		// "disable-component-extensions-with-background-pages": nil,
+		// "disable-default-apps":                               nil,
+		// "disable-hang-monitor":                               nil,
+		// "disable-ipc-flooding-protection":                    nil,
+		// "disable-popup-blocking":                             nil,
+		// "disable-prompt-on-repost":                           nil,
+		// "disable-renderer-backgrounding":                     nil,
+		// "disable-sync":                                       nil,
+		// "enable-automation":                                  nil,
+		// "enable-features":                                    {"NetworkService", "NetworkServiceInProcess"},
+		// "force-color-profile":                                {"srgb"},
+		// "metrics-recording-only":                             nil,
+		// "use-mock-keychain":                                  nil,
 	}
 
 	if defaults.Show {
