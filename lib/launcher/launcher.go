@@ -58,7 +58,7 @@ func New() *Launcher {
 		flags.Bin: {defaults.Bin},
 		// flags.Leakless: nil,
 		//
-		// flags.UserDataDir: {dir},
+		flags.UserDataDir: {dir},
 		//
 		// // use random port by default
 		// flags.RemoteDebuggingPort: {defaults.Port},
@@ -66,7 +66,7 @@ func New() *Launcher {
 		// // enable headless by default
 		// flags.Headless: nil,
 		//
-		// flags.Preferences: {`{"plugins":{"always_open_pdf_externally": true}}`},
+		flags.Preferences: {`{"plugins":{"always_open_pdf_externally": true}}`},
 		//
 		// // to disable the init blank window
 		// "no-first-run":      nil,
@@ -91,7 +91,7 @@ func New() *Launcher {
 		// "disable-sync":                                       nil,
 		// "enable-automation":                                  nil,
 		// "enable-features":                                    {"NetworkService", "NetworkServiceInProcess"},
-		// "force-color-profile":                                {"srgb"},
+		"force-color-profile": {"srgb"},
 		// "metrics-recording-only":                             nil,
 		// "use-mock-keychain":                                  nil,
 	}
